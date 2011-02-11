@@ -1,11 +1,12 @@
 Gem::Specification.new do |spec|
   spec.name = 'disabled'
   spec.files = %w[
-    Rakefile disabled.gemspec lib/disabled.rb
+    Rakefile disabled.gemspec lib/disabled.rb ext/disabled/extconf.rb
   ]
-  spec.version = '0.1.1'
+  spec.extensions = 'ext/disabled/extconf.rb'
+  spec.version = '0.1'
   spec.summary = 'This is a placeholder for "ruby --gem=disabled"'
-  spec.description <<-EOS
+  spec.description = <<-EOS
     This is a placeholder for "ruby --gem=disabled". You should not install this gem.
 
     You can not load this gem anyway.
